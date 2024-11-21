@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo de Cães</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Bingo de Cães</h1>
+    <button onclick="sortearNumero()">Sortear Número</button>
+    <button onclick="resetJogo()">Novo Jogo</button>
+    <button onclick="toggleLog()">Visualizar Histórico</button>
+
+    <div id="dog-info">
+        <h2 id="dog-name">Clique em Sortear para começar!</h2>
+        <img id="dog-image" src="" alt="" style="display: none;">
+    </div>
+
+    <div id="history">
+        <h3>Números sorteados:</h3>
+        <div id="sorted-numbers"></div>
+    </div>
+
+    <div id="log">
+        <h3>Log de Eventos:</h3>
+        <div id="event-log"></div>
+    </div>
+
+    <script src="dogs.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
